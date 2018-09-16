@@ -1,0 +1,348 @@
+#map {
+  left:0px!important;
+  top:0px!important;
+  padding: 0;
+  margin: 0;
+  height: 100%!important;
+  width: 100%!important;
+}
+#search {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 50;
+  visibility: hidden;
+}
+.attrName{
+  color: #888888;
+  vertical-align: top;
+}
+.attrValue{
+  vertical-align: top;
+}
+.esriPopup{
+  z-index: 50;
+}
+.esriPopupWrapper .title {
+    cursor: move;
+	font-size:12px!important;
+}
+.titlePane .title{
+	margin-bottom: 0px!important;
+}
+.titlePane .close {
+	opacity: 1!important;
+}
+.esriPopup .hidden {
+    display: none !important;
+}
+.esriPopup .contentPane{
+padding: 0px!important;
+}
+.contentPane table{
+margin: 0px!important;
+}
+#info{
+  height: 17px;
+  position:absolute;
+  left:15px;
+  bottom:5px;
+  z-index:50;
+  display: block;
+  text-align: left;
+  padding: 0 5px;
+  font-size: 12px !important;
+  color:white;
+  font-family: Verdana, Arial, sans-serif;
+  opacity: 0.6;
+  background: #000000;
+  visibility: hidden;
+}
+#HomeButton{
+  position: absolute;
+  top: 215px;
+  right: 20px;
+  z-index: 50;
+  visibility: hidden;
+}
+#fullscreen_button{
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/fulls.png") no-repeat center center;
+  background-color: rgba(255,255,255,0.80);
+  text-align: center;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 50;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+}
+#fullscreen_button:hover{
+  background-color: rgba(245,245,245,0.90);
+}
+#layers_button{
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/layers.png") no-repeat center center;
+  background-color: rgba(255,255,255,0.80);
+  text-align: center;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 135px;
+  right: 20px;
+  z-index: 50;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+}
+#layers_button:hover{
+  background-color: rgba(245,245,245,0.90);
+}
+#layerListPane{
+    width:25%;
+}
+.esriLayer{
+  background-color: #fff;
+}
+.esriLayerList .esriList{
+    border-top:none;
+}
+.esriLayerList .esriTitle {
+  background-color: #fff;
+  border-bottom:none;
+}
+.esriLayerList .esriList ul{
+  background-color: #fff;
+}
+#my_layers_panel{
+  font-size: 14px!important;
+  position:absolute;
+  right:60px;
+  top:10px;
+  z-Index:51;
+  width:380px;
+  height:280px;
+  max-height: 95%;
+  resize: vertical;
+  overflow:hidden;
+  visibility: hidden;
+  min-height: 150px;
+}
+#my_layers_panelheader{
+  cursor: move;
+}
+#my_layers_body{
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+}
+#zoom_in{
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/zoom_in.png") no-repeat center center;
+  background-color: rgba(255,255,255,0.80);
+  text-align: center;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 55px;
+  right: 20px;
+  z-index: 50;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+}
+#zoom_in:hover{
+  background-color: rgba(245,245,245,0.90);
+}
+#zoom_out{
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/zoom_out.png") no-repeat center center;
+  background-color: rgba(255,255,255,0.80);
+  text-align: center;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 95px;
+  right: 20px;
+  z-index: 50;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+}
+#zoom_out:hover{
+  background-color: rgba(245,245,245,0.90);
+}
+#measurement_button{
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/measure.png") no-repeat center center;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 175px;
+  right: 20px;
+  z-index: 50;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+}
+#measurement_button:hover{
+  background-color: rgba(245,245,245,0.90);
+}
+#my_measurement_panel{
+  font-size: 14px!important;
+  position:absolute;
+  right:60px;
+  top:10px;
+  z-Index:51;
+  width:280px;
+  height:250px;
+  max-height: 95%;
+  resize: vertical;
+  overflow:hidden;
+  visibility: hidden;
+  min-height: 150px;
+}
+#my_measurement_panelheader{
+  cursor: move;
+}
+#my_measurement_body{
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+}
+.dijitMenuTable{
+  border: 1px solid black;
+}
+.dijitMenuTable td{
+  padding: 2px;
+}
+.dijitMenuTable tr:hover{
+  background-color: #ededed;
+}
+.dijitButtonText{
+  padding-left: 5px;
+}
+.dijitArrowButtonChar{
+  padding-right: 5px;
+  display: inline-block!important;
+}
+.dijitArrowButtonInner{
+  width: 0px!important;
+}
+.dijitDownArrowButton:hover .dijitButtonText, .dijitDownArrowButton:hover .dijitArrowButtonChar{
+  background-color: #ededed
+}
+.esriToggleButton{
+  visibility: inherit!important;
+}
+#loading {
+  position: absolute;
+  background-image: url('https://almaty.uaig.kz/wp-content/uploads/2018/09/loading2.gif');
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 29px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main_loading{
+  position: absolute;
+  left:0px;
+  top:0px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #508dca;
+}
+.home{
+  height: 30px!important;
+  width: 30px!important;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/home.png") no-repeat center center!important;
+  background-color: rgba(255,255,255,0.8)!important;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%!important;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2)!important;
+}
+.home:hover{
+  background-color: rgba(245,245,245,0.90)!important;
+}
+.searchInputGroup{
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 235px;
+  height: 48px;
+  border-bottom: 1px solid transparent;
+  padding: 12px 12px 11px 12px;
+  transition-property: background,box-shadow;
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+}
+.searchInput{
+  width: 90%!important;
+  border:none!important;
+  height: 24px !important;
+  line-height: 24px;
+  vertical-align: top;
+  font-size: 15px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.searchClear {
+  padding-top: 7px;
+  height: 24px !important;
+  line-height: 24px;
+  vertical-align: top;
+  margin: 0 !important;
+}
+#search_menu_button{
+  border:none!important;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-bottom: 1px solid transparent;
+  padding: 12px 12px 11px 12px;
+  transition-property: background,box-shadow;
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+}
+.searchBtn {
+  border:none!important;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box!important;
+  width: 48px!important;
+  height: 48px!important;
+  border-bottom: 1px solid transparent;
+  padding: 12px 12px 11px 12px!important;
+  transition-property: background,box-shadow;
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+}
+*:focus {
+outline: 0;
+outline: none;
+}
