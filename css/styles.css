@@ -52,6 +52,21 @@ html, body, #map {
   right: 20px;
   z-index: 50;
   visibility: hidden;
+  height: 30px!important;
+  width: 30px!important;
+  background: url("/images/home.png") no-repeat center center!important;
+  background-color: rgba(255,255,255,0.8)!important;
+  padding: 2px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%!important;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2)!important;
+}
+#HomeButton:hover{
+  background-color: rgba(245,245,245,0.90)!important;
+}
+.esri-icon-home{
+  display: none!important;
 }
 #fullscreen_button{
   visibility: hidden;
@@ -132,11 +147,11 @@ html, body, #map {
   overflow-x: hidden;
   background-color: white;
 }
-#zoom_in{
+#basemap{
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/zoom_in.png") no-repeat center center;
+  background: url("/images/basemap.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -149,8 +164,31 @@ html, body, #map {
   z-index: 50;
   box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
 }
-#zoom_in:hover{
+#basemap:hover{
   background-color: rgba(245,245,245,0.90);
+}
+#my_basemap_panel{
+  font-size: 14px!important;
+  position:absolute;
+  right:60px;
+  top:10px;
+  z-index: 51;
+  width:380px;
+  height:280px;
+  max-height: 95%;
+  resize: vertical;
+  overflow:hidden;
+  visibility: hidden;
+  min-height: 150px;
+}
+#my_basemap_panelheader{
+  cursor: move;
+}
+#my_basemap_body{
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
 }
 #zoom_out{
   visibility: hidden;
@@ -259,20 +297,6 @@ html, body, #map {
   height: 100%;
   width: 100%;
   background-color: #508dca;
-}
-.home{
-  height: 30px!important;
-  width: 30px!important;
-  background: url("/images/home.png") no-repeat center center!important;
-  background-color: rgba(255,255,255,0.8)!important;
-  padding: 2px;
-  user-select: none;
-  cursor: pointer;
-  border-radius: 50%!important;
-  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2)!important;
-}
-.home:hover{
-  background-color: rgba(245,245,245,0.90)!important;
 }
 .searchInputGroup{
   background: #fff;
