@@ -161,7 +161,7 @@ html, body, #map {
   cursor: move;
 }
 #my_layers_body{
-  padding-top: 5px!important; 
+  padding-top: 5px!important;
   margin-bottom: 15px;
   overflow-y: scroll;
   overflow-x: hidden;

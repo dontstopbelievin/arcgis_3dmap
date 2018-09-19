@@ -13,9 +13,10 @@ require([
     "esri/widgets/DirectLineMeasurement3D",
     "esri/widgets/AreaMeasurement3D",
     "esri/widgets/Search",
+    "esri/widgets/Legend",
     "dojo/domReady!"
 ], function(dom, SceneView, WebScene, BasemapGallery, all, LayerList, Home, DirectLineMeasurement3D, AreaMeasurement3D,
-    Search)
+    Search, Legend)
    {
 
   var scene = new WebScene({
@@ -31,10 +32,11 @@ require([
       altitude:{
         min: 1000,
         max: 250000
-      }
+      },
+      collision: false
     },
     environment: {
-      atmosphere: null,
+      atmosphereEnabled: false,
       starsEnabled: false
     }
   });
@@ -60,6 +62,13 @@ require([
     var homeBtn = new Home({
       view: view
     }, "HomeButton");
+
+    var legend = new Legend({
+      view: view,
+      style: "classic", // other styles include 'classic'
+      container: "legendList"
+    });
+
   });
 
   elem = document.getElementById("my_map");
@@ -111,6 +120,17 @@ require([
       } else {
         setActiveButton(null);
       }
+    });
+
+    document.getElementById("lay_button").addEventListener("click", function () {
+      document.getElementById("legendList").style.display = "none";
+      document.getElementById("layerList").style.display = "block";
+      console.log("dufk");
+    });
+    document.getElementById("leg_button").addEventListener("click", function () {
+      document.getElementById("layerList").style.display = "none";
+      document.getElementById("legendList").style.display = "block";
+      console.log("legendList");
     });
 
     return scene.basemap.load();
