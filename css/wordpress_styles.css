@@ -1,10 +1,11 @@
-html, body, #map {
+#map {
   left:0px!important;
   top:0px!important;
   padding: 0;
   margin: 0;
   height: 100%!important;
   width: 100%!important;
+  position: relative;
 }
 .action-button {
   font-size: 16px;
@@ -73,7 +74,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px!important;
   width: 30px!important;
-  background: url("/images/home.png") no-repeat center center!important;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/home.png") no-repeat center center!important;
   background-color: rgba(255,255,255,0.8)!important;
   padding: 2px;
   user-select: none;
@@ -91,7 +92,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/fulls.png") no-repeat center center;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/fulls.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -111,7 +112,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/layers.png") no-repeat center center;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/layers.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -170,7 +171,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/basemap.png") no-repeat center center;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/basemap.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -213,7 +214,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/search.png") no-repeat center center;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/search.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -255,7 +256,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/measure.png") no-repeat center center;
+  background: url("https://almaty.uaig.kz/wp-content/uploads/2018/09/measure.png") no-repeat center center;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
   padding: 2px;
@@ -329,7 +330,7 @@ html, body, #map {
 }
 #loading {
   position: absolute;
-  background-image: url('/images/loading2.gif');
+  background-image: url('https://almaty.uaig.kz/wp-content/uploads/2018/09/loading2.gif');
   background-repeat: no-repeat;
   width: 58px;
   height: 29px;

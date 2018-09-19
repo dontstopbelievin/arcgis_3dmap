@@ -1,7 +1,7 @@
 var map;
 var timer;
 /* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
+var elem = "";
 require([
     "dojo/dom",
     "esri/views/SceneView",
@@ -62,6 +62,7 @@ require([
     }, "HomeButton");
   });
 
+  elem = document.getElementById("my_map");
   var fulls = document.getElementById("fullscreen_button");
   var my_basemap = document.getElementById("basemap");
   var basemap_hidden = true;
