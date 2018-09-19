@@ -13,9 +13,10 @@ require([
     "esri/widgets/DirectLineMeasurement3D",
     "esri/widgets/AreaMeasurement3D",
     "esri/widgets/Search",
+    "esri/widgets/Legend",
     "dojo/domReady!"
 ], function(dom, SceneView, WebScene, BasemapGallery, all, LayerList, Home, DirectLineMeasurement3D, AreaMeasurement3D,
-    Search)
+    Search, Legend)
    {
 
   var scene = new WebScene({
@@ -31,10 +32,11 @@ require([
       altitude:{
         min: 1000,
         max: 250000
-      }
+      },
+      collision: false
     },
     environment: {
-      atmosphere: null,
+      atmosphereEnabled: false,
       starsEnabled: false
     }
   });
@@ -56,10 +58,36 @@ require([
       container: "search_content"
     });
 
+    /*var sources = [{
+      featureLayer: layerList,
+      searchFields: ["Email", "URL"],
+      displayField: "Email",
+      exactMatch: false,
+      outFields: ["*"],
+      name: "Point FS",
+      placeholder: "example: esri",
+      maxResults: 6,
+      maxSuggestions: 6,
+      suggestionsEnabled: true,
+      minSuggestCharacters: 0
+    }]; //array of sources
+    searchWidget.sources = sources;*/
+
+    searchWidget.on("search-start", function(event){
+      console.log("Search started.");
+    });
+
     // Set up a home button for resetting the viewpoint to the intial extent
     var homeBtn = new Home({
       view: view
     }, "HomeButton");
+
+    var legend = new Legend({
+      view: view,
+      style: "classic", // other styles include 'classic'
+      container: "legendList"
+    });
+
   });
 
   var fulls = document.getElementById("fullscreen_button");
@@ -112,7 +140,17 @@ require([
       }
     });
 
-    return scene.basemap.load();
+    document.getElementById("lay_button").addEventListener("click", function () {
+      document.getElementById("legendList").style.display = "none";
+      document.getElementById("layerList").style.display = "block";
+      console.log("dufk");
+    });
+    document.getElementById("leg_button").addEventListener("click", function () {
+      document.getElementById("layerList").style.display = "none";
+      document.getElementById("legendList").style.display = "block";
+      console.log("legendList");
+    });
+
   })
   .then(function() {
     // grab all the layers and load them
@@ -132,11 +170,16 @@ require([
   .then(function(layers) {
     // each layer load promise resolves with the layer
     console.log("all " + layers.length + " layers loaded");
+    //view.ground.navigationConstraint = "stay-above";
   })
   .catch(function(error) {
     console.log("catching error");
     console.error(error);
   });
+
+  function lay_button(){
+    alert();
+  }
 
   function setActiveWidget(type) {
     switch (type) {
