@@ -6,6 +6,22 @@ html, body, #map {
   height: 100%!important;
   width: 100%!important;
 }
+.esri-popup__main-container{
+max-height: 100%!important;
+  width: auto;
+}
+.esri-popup__main-container esri-widget esri-popup--is-collapsible{
+max-height: 100%!important;
+  width: auto;
+}
+.esri-view-height-less-than-medium .esri-popup__main-container{
+  max-height: 100%!important;
+  width: auto;
+}
+.esri-ui .esri-popup{
+  max-height: 100%!important;
+  width: auto;
+}
 .action-button {
   font-size: 16px;
   background-color: transparent;
@@ -73,7 +89,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px!important;
   width: 30px!important;
-  background: url("/images/home.png") no-repeat center center!important;
+  background: url("../images/home.png") no-repeat center center!important;
   background-color: rgba(255,255,255,0.8)!important;
   padding: 2px;
   user-select: none;
@@ -91,7 +107,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/fulls.png") no-repeat center center;
+  background: url("../images/fulls.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -111,7 +127,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/layers.png") no-repeat center center;
+  background: url("../images/layers.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -171,7 +187,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/basemap.png") no-repeat center center;
+  background: url("../images/basemap.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -214,7 +230,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/search.png") no-repeat center center;
+  background: url("../images/search.png") no-repeat center center;
   background-color: rgba(255,255,255,0.80);
   text-align: center;
   padding: 2px;
@@ -256,7 +272,7 @@ html, body, #map {
   visibility: hidden;
   height: 30px;
   width: 30px;
-  background: url("/images/measure.png") no-repeat center center;
+  background: url("../images/measure.png") no-repeat center center;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
   padding: 2px;
@@ -330,7 +346,7 @@ html, body, #map {
 }
 #loading {
   position: absolute;
-  background-image: url('/images/loading2.gif');
+  background-image: url('../images/loading2.gif');
   background-repeat: no-repeat;
   width: 58px;
   height: 29px;

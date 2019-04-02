@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "nodejs",
+  "main": "src/index.js",
+  "dependencies": {
+    "node-onvif": "^0.1.7",
+    "node-rtsp-stream": "0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dontstopbelievin/arcgis_3dmap.git"
+  },
+  "author": "aman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dontstopbelievin/arcgis_3dmap/issues"
+  },
+  "homepage": "https://github.com/dontstopbelievin/arcgis_3dmap#readme"
+}
